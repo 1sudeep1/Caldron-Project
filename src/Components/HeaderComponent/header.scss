@@ -1,0 +1,116 @@
+.nav-link {
+    font-size: 15px !important;
+    color: white !important;
+    position: relative;
+    .bottom-line {
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        background-color: #8B0000;
+        transition: 1s;
+    }
+
+    &:hover {
+        .bottom-line {
+            width: 100%;
+        }
+    }
+}
+
+.navbar-expand-lg {
+    background: #0578BE;
+    color: white;
+    .dropdown-menu{
+        a{
+            color: #000;
+        }
+    }
+}
+
+.search-form {
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 25px !important;
+    padding: 0% 5% !important;
+    width: 100%;
+    input{
+        font-size: 11px;
+    }
+
+}
+
+.clear-btn{
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.search-section{
+    z-index: 2;
+    top: 4.5rem;
+    left: 30%;
+    right: 0%;
+    background: #f1e7e7;
+    width: 50%;
+    font-size: 14px;
+}
+
+.search-btn {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: #fff;
+    background: red;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding:5px;
+}
+.form1, .form2{
+    width: 100%;
+    input::placeholder{
+        font-size: 12px !important;
+    }
+}
+.nav-icon {
+    i {
+        cursor: pointer;
+    }
+}
+.fixed-nav{
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    animation: headerFixed 0.9s;
+}
+@keyframes headerFixed {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.dropdown{
+    &:hover{
+        .dropdown-menu{
+            display: block;
+            .dropdown-item{
+                &:hover{
+                    background-color: #8B0000;
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggler{
+    background-color: #e4e0e0 !important;
+    border: none !important;
+    border-radius: 5px !important;
+}
