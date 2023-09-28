@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.scroll-top {
+    background: #8B0000 !important;
+    border-radius: 50% !important;
+    color: white !important;
+    transition: 0.9s;
+    animation: scrollAnim 0.9s infinite;
+    border: 2px solid black !important;
+}
+
+@keyframes scrollAnim {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:991px) {
+    .flip-card {
+        height: 240px;
+    }
+    .product-img-div {
+        .product-img {
+            width: 50% !important;
+            object-fit: cover !important;
+        }
+    }
+    .main-nav{
+        width: 100%;
+    }
+    .navbar-brand{
+        img{
+            width: 100% !important;
+        }
+
+    }
+    .form1{
+        display: block !important;
+        margin-right: 3% !important;
+        width: 200%;
+    }
+    .form2{
+        display: none !important;
+    }
+}
+
+// @media (min-width:395px) and (max-width:600px){
+//     .product-img-div {
+//         .product-img {
+//             width: 30% !important;
+//             object-fit: contain !important;
+//         }
+//     }
+// }
+@media (min-width:1200px) {
+    .navbar-nav {
+        gap: 10px !important;
+    }
+
+    .flip-card {
+        height: 350px;
+    }
+    .form1{
+        display: none !important;
+    }
+    .form2{
+        display: block !important;
+    }
+}
+
+@media (max-width:394px) and (min-width:0) {
+    .top-section {
+        display: none !important;
+    }
+.form1{
+    width: 180%;
+}
+
+    .navbar-brand{
+        img{
+            width: 100% !important;
+        }
+
+    }
+    .product-img-div {
+        .product-img {
+            width: 50% !important;
+            object-fit: contain !important;
+        }
+    }
+
+    .flip-card {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top {
+        text-align: center;
+
+        .social-icon {
+            justify-content: center !important;
+        }
+    }
+    .product-img-div {
+        .product-img {
+            width: 30% !important;
+            object-fit: contain !important;
+        }
+    }
+
+    .social-icon {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    .bottom-footer {
+        text-align: center !important;
+
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .form1{
+        display: none !important;
+    }
+    .form2{
+        display: block !important;
+    }
+}
