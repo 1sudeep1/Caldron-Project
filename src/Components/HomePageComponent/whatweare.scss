@@ -1,0 +1,43 @@
+.whatweare-section{
+    background-color: pink;
+    button{
+        // max-width: 12%;
+        display: inline-block !important;
+    }
+}
+.we-are-box{
+    transition: 0.7s;
+    overflow: hidden;
+    &:hover{
+        img{
+            transform: scale(1.1);
+            transition: .5s;
+        }
+        h4{
+            color: red;
+        }
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background: rgb(236, 231, 231);
+    }
+ 
+}
+.what-title{
+    font-style: italic;
+    padding: 10px; 
+    display: inline-block;
+    background-color: darkred;
+    color: #fff;
+    border: none;
+}
+.what-title1{
+    transition: 0.2s;
+    padding: 7px;
+    &:hover{
+        transform: scale(0.9);
+    }
+}
+.we-are-box-content{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: rgb(236, 231, 231);
+    text-align: justify;
+}

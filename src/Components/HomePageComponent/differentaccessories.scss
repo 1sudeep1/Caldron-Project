@@ -1,0 +1,110 @@
+.product-box {
+    cursor: pointer;
+    border: 2px solid rgba(201, 193, 193, 0.925);
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 250px;
+    .product-img {
+      width: 70% !important;
+      object-fit: contain !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cart-btn{
+        display:none;
+    }
+    h5:hover{
+        color: red;
+    }
+    a{
+        color: #000;
+    }
+
+    position: relative;
+
+    .border-top,
+    .border-right,
+    .border-bottom,
+    .border-left {
+        width: 0;
+        height: 3px;
+        background-color: red;
+        position: absolute;
+        top: -1%;
+        transition: 0.3s;
+
+    }
+
+    .border-right {
+        width: 3px;
+        height: 0px;
+        left: 100%;
+        top: -1% !important;
+    }
+
+    .border-left {
+        width: 3px;
+        height: 0px;
+        left: -1%;
+        bottom: -1% !important;
+    }
+
+    .border-bottom {
+        top: 100%;
+        right: -1% !important;
+    }
+    .product-img-div{
+        overflow: hidden;
+    }
+
+
+    &:hover {
+        .border-top {
+            width: 100%;
+            left: 0;
+        }
+
+        .border-right {
+            top: 0;
+            height: 102%;
+            transition-delay: .2s;
+        }
+
+        .border-bottom {
+            width: 102%;
+            right: 0;
+            transition-delay: .4s;
+        }
+
+        .border-left {
+            bottom: 0;
+            height: 101% !important;
+            transition-delay: .6s;
+        }
+        .product-img {
+            transform: scale(1.09);
+            transition: 0.9s;
+        }
+        .cart-btn{
+            display: block;
+            position: absolute;
+            background: red;
+            border: none !important;
+            color: #fff;
+            left: 45%;
+            bottom: 0;
+            animation: btn-anim 0.9s;
+            transition: 0.5s;
+        }
+        @keyframes btn-anim {
+            0%{transform: translateY(50px);}
+            100%{transform: translateY(0);}
+        }
+    }
+}
+.readmore-button{
+    background: #0578BE;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #fff;
+}
