@@ -1,0 +1,15 @@
+.our-achievement{
+    p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .nav-item{
+        .active{
+            background-color: brown !important;
+        }
+    }
+    .nav-link{
+        background: rgb(146, 142, 142);
+        border-radius: 0 !important;
+    }
+}
