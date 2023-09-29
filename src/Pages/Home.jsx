@@ -10,6 +10,7 @@ import WhyUs from '../Components/HomePageComponent/WhyUs';
 function Home() {
     return (
         <>  
+            <p>hello</p>
             <Banner />
             <HomeService/>
             <DifferentAccessories/>
