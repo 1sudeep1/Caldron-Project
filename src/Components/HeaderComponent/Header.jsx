@@ -17,6 +17,7 @@ import Inks from '../HomePageComponent/Inks'
 import LaserRouters from '../HomePageComponent/LaserRouters'
 import Printers from '../HomePageComponent/Printers'
 import ReleventInformation from '../../Pages/ReleventInformation'
+import SingleProduct from '../../Pages/SingleProduct'
 function Header() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const location = useLocation();
@@ -155,6 +156,7 @@ function Header() {
         <Route path="/laser-routers" element={<LaserRouters />} />
         <Route path="/printers-product" element={<Printers />} />
         <Route path="/information" element={<ReleventInformation />} />
+        <Route path="/single-product/:sid" element={<SingleProduct />} />
       </Routes>
     </>
   )
