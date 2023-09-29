@@ -12,6 +12,11 @@ import Contact from '../../Pages/Contact'
 import About from '../../Pages/About'
 import Services from '../../Pages/Services'
 import AllProducts from '../../Pages/AllProducts'
+import Accessories from '../AllProducts/Accessories'
+import Inks from '../HomePageComponent/Inks'
+import LaserRouters from '../HomePageComponent/LaserRouters'
+import Printers from '../HomePageComponent/Printers'
+import ReleventInformation from '../../Pages/ReleventInformation'
 function Header() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const location = useLocation();
@@ -145,6 +150,11 @@ function Header() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/all-products" element={<AllProducts />} />
+        <Route path="/accessories" element={<Accessories />} />
+        <Route path="/inksProduct" element={<Inks />} />
+        <Route path="/laser-routers" element={<LaserRouters />} />
+        <Route path="/printers-product" element={<Printers />} />
+        <Route path="/information" element={<ReleventInformation />} />
       </Routes>
     </>
   )
