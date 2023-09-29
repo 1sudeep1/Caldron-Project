@@ -1,0 +1,25 @@
+.about-section {
+    position: relative;
+    .breadcrumb-item {
+        font-weight: 500;
+        font-size: 14px;
+        font-size: medium;
+        color: red !important;
+
+        a {
+            color: #000;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+        text-align: justify;
+    }
+}
+.who-we-are{
+    p{
+        text-align: left;
+    }
+}

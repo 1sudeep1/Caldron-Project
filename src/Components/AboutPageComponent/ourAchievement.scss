@@ -1,0 +1,122 @@
+.our-achievement {
+    background-color: #a8b8c2;
+  }
+  
+  // Research and Development
+  @property --progress-value {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  
+  .progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* to center the percentage value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) "%";
+  }
+  
+  .crn-achivement {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: crn-progress 2s 1 forwards;
+    animation: crn-progress 2s 1 forwards;
+  }
+  
+  .crn-achivement::before {
+    -webkit-animation: crn-progress 2s 1 forwards;
+    animation: crn-progress 2s 1 forwards;
+  }
+  
+  @-webkit-keyframes crn-progress {
+    to {
+      --progress-value: 85;
+    }
+  }
+  
+  @keyframes crn-progress {
+    to {
+      --progress-value: 85;
+    }
+  }
+  
+  // Industry Experience
+  .crn-achivement1 {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: crn-progress1 2s 1 forwards;
+    animation: crn-progress1 2s 1 forwards;
+  }
+  
+  .crn-achivement1::before {
+    -webkit-animation: crn-progress1 2s 1 forwards;
+    animation: crn-progress1 2s 1 forwards;
+  }
+  
+  @-webkit-keyframes crn-progress1 {
+    to {
+      --progress-value: 88;
+    }
+  }
+  
+  @keyframes crn-progress1 {
+    to {
+      --progress-value: 88;
+    }
+  }
+  
+  // Quality Control
+  .crn-achivement2 {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: crn-progress2 2s 1 forwards;
+    animation: crn-progress2 2s 1 forwards;
+  }
+  
+  .crn-achivement2::before {
+    -webkit-animation: crn-progress2 2s 1 forwards;
+    animation: crn-progress2 2s 1 forwards;
+  }
+  
+  @-webkit-keyframes crn-progress2 {
+    to {
+      --progress-value: 60;
+    }
+  }
+  
+  @keyframes crn-progress2 {
+    to {
+      --progress-value: 60;
+    }
+  }
+  // Sales and Supply
+  .crn-achivement3 {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: crn-progress3 2s 1 forwards;
+    animation: crn-progress3 2s 1 forwards;
+  }
+  
+  .crn-achivement3::before {
+    -webkit-animation: crn-progress3 2s 1 forwards;
+    animation: crn-progress3 2s 1 forwards;
+  }
+  
+  @-webkit-keyframes crn-progress3 {
+    to {
+      --progress-value: 60;
+    }
+  }
+  
+  @keyframes crn-progress3 {
+    to {
+      --progress-value: 90;
+    }
+  }
+  
+  

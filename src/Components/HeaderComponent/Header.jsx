@@ -9,6 +9,7 @@ import laserrouterData from '../../Data/laserrouterData'
 import printersData from '../../Data/PrintersData'
 import Home from '../../Pages/Home'
 import Contact from '../../Pages/Contact'
+import About from '../../Pages/About'
 function Header() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const location = useLocation();
@@ -138,6 +139,7 @@ function Header() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

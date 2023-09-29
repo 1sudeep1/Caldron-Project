@@ -55,7 +55,7 @@ function ContactForm() {
                                         </div>
                                     ))}
                                 </div>
-                                <Link to='/all-products'><button className='readmore-button text-white what-title1 fs-6 d-flex align-items-center my-4'>View Our Products<i className="fa-solid fa-arrow-right"></i></button></Link>
+                                <Link to='/all-products'><button className='readmore-button text-white what-title1 fs-6 d-flex gap-2 align-items-center my-4'>View Our Products<i className="fa-solid fa-arrow-right"></i></button></Link>
                             </div>
                         </div>
                     </form>
